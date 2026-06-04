@@ -1,4 +1,4 @@
-import { Share2, Camera, Video } from "lucide-react";
+import { Instagram, Facebook, MessageCircle } from "lucide-react";
 
 export function Footer() {
   return (
@@ -15,13 +15,13 @@ export function Footer() {
           </p>
           <div className="flex gap-4">
             <a className="w-10 h-10 border border-secondary/30 flex items-center justify-center text-secondary hover:bg-secondary hover:text-on-secondary transition-all" href="#">
-              <Share2 className="w-5 h-5" />
+              <Instagram className="w-5 h-5" />
             </a>
             <a className="w-10 h-10 border border-secondary/30 flex items-center justify-center text-secondary hover:bg-secondary hover:text-on-secondary transition-all" href="#">
-              <Camera className="w-5 h-5" />
+              <MessageCircle className="w-5 h-5" />
             </a>
             <a className="w-10 h-10 border border-secondary/30 flex items-center justify-center text-secondary hover:bg-secondary hover:text-on-secondary transition-all" href="#">
-              <Video className="w-5 h-5" />
+              <Facebook className="w-5 h-5" />
             </a>
           </div>
         </div>
