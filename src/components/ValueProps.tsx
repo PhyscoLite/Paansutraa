@@ -3,7 +3,7 @@ export function ValueProps() {
     <section className="py-16 md:py-32 bg-surface-container-low border-y border-secondary/10">
       <div className="px-5 md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
         
-        <div className="space-y-12">
+        <div className="space-y-10 border border-secondary/20 p-8 md:p-12 rounded-xl bg-surface-container/30 hover:border-secondary/40 transition-colors">
           <h3 className="text-headline-md text-secondary border-b border-secondary/20 pb-4">Vastu Compliant</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
             <div>
@@ -25,7 +25,7 @@ export function ValueProps() {
           </div>
         </div>
 
-        <div className="space-y-12">
+        <div className="space-y-10 border border-secondary/20 p-8 md:p-12 rounded-xl bg-surface-container/30 hover:border-secondary/40 transition-colors">
           <h3 className="text-headline-md text-secondary border-b border-secondary/20 pb-4">Scientifically Proven</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
             <div>

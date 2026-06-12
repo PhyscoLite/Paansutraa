@@ -32,8 +32,8 @@ export function HoReCaTeaser() {
         <div className="relative">
           <img 
             className="rounded-lg shadow-2xl border border-secondary/20" 
-            alt="A luxurious hotel lobby bar" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3YPf8NuwRS78KS7d55LSLub36cXl3IJ3q8ybT7CeRb5XsTyxS6NufElJVyPFhor9U8SKZRlecxPOOgSfq_ZngQFIQJL44j5Qe9rHMimZVB-cb_4w0V21tVvgx6XJU-ZAhjXSYIQYvuXTtHNyNX-ZxSHLliMzQzJ7V7jPOUKhWpOdcg_UT3ISpJtZFmmoJfoOOn5W8lqgqLzwDPp8fhtb0rxRM_qick6AStB0JH0ynA1TurAn4Yy5rfWv3TVuSUvYNwVSPcxEcR1ET" />
+            alt="Luxury purple and gold gift hamper" 
+            src="https://res.cloudinary.com/dm3scoj2q/image/upload/v1781198457/luxury-purple-and-gold-gift-hamper-with-gourmet-treats-spices-and-betel-leaves_ljh82h.webp" />
         </div>
       </div>
     </section>

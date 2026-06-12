@@ -3,40 +3,27 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { BrandVideo } from './components/BrandVideo';
-import { Features } from './components/Features';
-import { ProductShowcase } from './components/ProductShowcase';
-import { HoReCaTeaser } from './components/HoReCaTeaser';
-import { WeddingTeaser } from './components/WeddingTeaser';
-import { CorporateGifting } from './components/CorporateGifting';
-import { SocialProof } from './components/SocialProof';
-import { BrandStory } from './components/BrandStory';
-import { ValueProps } from './components/ValueProps';
-import { InstagramFeed } from './components/InstagramFeed';
 import { Footer } from './components/Footer';
 import { FloatingActions } from './components/FloatingActions';
+import { Home } from './pages/Home';
+import { Products } from './pages/Products';
+import { HoReCa } from './pages/HoReCa';
+import { Order } from './pages/Order';
 
 export default function App() {
   return (
-    <>
+    <Router>
       <Navbar />
-      <main>
-        <Hero />
-        <BrandVideo />
-        <Features />
-        <ProductShowcase />
-        <HoReCaTeaser />
-        <WeddingTeaser />
-        <CorporateGifting />
-        <SocialProof />
-        <BrandStory />
-        <ValueProps />
-        <InstagramFeed />
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/horeca" element={<HoReCa />} />
+        <Route path="/order" element={<Order />} />
+      </Routes>
       <Footer />
       <FloatingActions />
-    </>
+    </Router>
   );
 }

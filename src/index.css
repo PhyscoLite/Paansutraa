@@ -50,6 +50,16 @@
   backdrop-filter: blur(12px);
   border: 1px solid rgba(233, 195, 73, 0.1);
 }
+
+.hide-arrows::-webkit-outer-spin-button,
+.hide-arrows::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.hide-arrows {
+  -moz-appearance: textfield;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
