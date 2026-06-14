@@ -23,6 +23,7 @@ const routes = [
       { path: '/weddings', element: <Weddings /> },
       { path: '/corporate', element: <Corporate /> },
       { path: '/contact', element: <Contact /> },
+      { path: '*', element: <div className="min-h-screen pt-32 text-center"><h1 className="text-display-md text-secondary mb-4">404</h1><p>Page not found. <a href="/" className="underline text-secondary">Return home</a>.</p></div> },
     ],
   },
 ];
