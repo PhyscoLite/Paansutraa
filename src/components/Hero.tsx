@@ -334,7 +334,7 @@ export function Hero() {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.6, delay: i * 0.15, ease: "easeOut" }}
                 whileHover={{ scale: 1.05, y: -5 }}
-                className="p-4 md:p-6 rounded-xl hover:bg-surface-container transition-all duration-300 cursor-default border border-transparent hover:border-[#C8A96A]/20 hover:shadow-lg hover:shadow-[#C8A96A]/10"
+                className={`p-4 md:p-6 rounded-xl hover:bg-surface-container transition-all duration-300 cursor-default border border-transparent hover:border-[#C8A96A]/20 hover:shadow-lg hover:shadow-[#C8A96A]/10 ${i === trustItems.length - 1 ? 'col-span-full lg:col-span-1 w-full mx-auto' : ''}`}
               >
                 <div className="text-[#C8A96A] text-2xl md:text-3xl font-serif font-bold mb-2">{item.value}</div>
                 <div className="text-on-surface-variant text-xs md:text-sm text-label-md uppercase tracking-widest">{item.label}</div>

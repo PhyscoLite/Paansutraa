@@ -25,7 +25,7 @@ export function ProductShowcase() {
   ];
 
   return (
-    <section className="py-16 md:py-32 bg-surface-container-low overflow-hidden">
+    <section className="py-16 md:py-32 bg-[#0b3027] overflow-hidden">
       <div className="px-5 md:px-margin-desktop max-w-container-max mx-auto flex justify-between items-end mb-8 md:mb-16">
         <h2 className="text-headline-lg text-secondary">Our Signature Collection</h2>
         <Link to="/products" className="hidden sm:inline-block text-secondary border-b border-secondary pb-1 text-label-md uppercase tracking-widest hover:opacity-80 transition-opacity">
@@ -35,7 +35,7 @@ export function ProductShowcase() {
       <div className="flex gap-4 md:gap-6 overflow-x-auto pb-12 px-5 md:px-margin-desktop snap-x">
         {products.map((p, i) => (
           <div key={i} className="w-[200px] sm:w-[240px] md:w-[280px] snap-center shrink-0 flex flex-col group">
-            <div className="aspect-[4/5] bg-surface-container-highest mb-4 overflow-hidden border border-secondary/10 relative">
+            <div className="aspect-square bg-surface-container-highest mb-4 overflow-hidden border border-secondary/10 relative">
               <img 
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                 alt={p.name} 

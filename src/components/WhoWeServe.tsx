@@ -24,7 +24,7 @@ export function WhoWeServe() {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16">
           {segments.map((segment, idx) => (
-            <div key={idx} className="bg-surface-container-low p-6 md:p-8 rounded-xl border border-secondary/10 hover:border-secondary/40 transition-colors text-center group cursor-default">
+            <div key={idx} className={`bg-surface-container-low p-6 md:p-8 rounded-xl border border-secondary/10 hover:border-secondary/40 transition-colors text-center group cursor-default ${idx === segments.length - 1 ? 'col-span-full md:col-span-1' : ''}`}>
               <div className="w-16 h-16 mx-auto mb-6 bg-background rounded-full flex items-center justify-center border border-secondary/20 group-hover:bg-secondary group-hover:text-on-secondary text-secondary transition-colors">
                 <segment.icon className="w-8 h-8" strokeWidth={1.5} />
               </div>

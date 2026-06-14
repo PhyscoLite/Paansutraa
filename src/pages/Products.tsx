@@ -129,9 +129,9 @@ export function Products() {
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3 }}
                 key={p.id} 
-                className="flex flex-col group"
+                className="flex flex-col group cursor-pointer hover:-translate-y-2 transition-transform duration-300"
               >
-                <div className="aspect-[4/5] bg-surface-container-highest mb-6 overflow-hidden border border-secondary/10 relative">
+                <div className="aspect-square bg-surface-container-highest mb-6 overflow-hidden border border-secondary/10 relative">
                   <img 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                     alt={p.name} 

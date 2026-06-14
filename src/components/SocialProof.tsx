@@ -2,8 +2,10 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
-export function SocialProof() {
-  const reviews = [
+export function SocialProof({ 
+  title = "Trusted by Hospitality Leaders",
+  subtitle,
+  reviews = [
     {
       text: "Paansutraa has completely transformed our guest's post-dining experience. The quality is unparalleled.",
       author: "Rahul Sharma",
@@ -22,7 +24,14 @@ export function SocialProof() {
       role: "Lead Planner",
       company: "Wedding Design Hub",
     }
-  ];
+  ],
+  children
+}: { 
+  title?: string;
+  subtitle?: string;
+  reviews?: Array<{text: string; author: string; role: string; company: string}>;
+  children?: React.ReactNode;
+}) {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -37,11 +46,12 @@ export function SocialProof() {
   const prevSlide = () => setCurrentIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
 
   return (
-    <section className="py-16 md:py-32 bg-surface-container-lowest overflow-hidden">
-      <div className="px-5 md:px-margin-desktop max-w-container-max mx-auto">
-        <h2 className="text-headline-md text-center text-secondary mb-12 md:mb-20">Trusted by Hospitality Leaders</h2>
+    <section className="py-16 md:py-32 bg-surface-container-lowest overflow-hidden border-b border-secondary/10">
+      <div className="px-5 md:px-margin-desktop max-w-container-max mx-auto text-center">
+        {subtitle && <span className="text-label-md uppercase tracking-widest text-on-surface-variant mb-4 block">{subtitle}</span>}
+        <h2 className={subtitle ? "text-headline-lg md:text-display-sm text-secondary font-serif mb-12" : "text-headline-md text-secondary mb-12 md:mb-20"}>{title}</h2>
         
-        <div className="relative max-w-5xl mx-auto">
+        <div className="relative max-w-5xl mx-auto mb-16">
           {/* Navigation Buttons */}
           <button 
             onClick={prevSlide}
@@ -67,7 +77,7 @@ export function SocialProof() {
                 transition={{ duration: 0.5, ease: "easeInOut" }}
                 className="absolute inset-0 flex items-center justify-center p-4 md:p-8"
               >
-                <div className="w-full bg-background border border-secondary/10 p-8 md:p-12 lg:p-16 relative rounded-2xl shadow-sm">
+                <div className="w-full bg-background border border-secondary/20 p-8 md:p-12 lg:p-16 relative rounded-2xl shadow-sm glass-card">
                   <Quote className="w-16 h-16 md:w-32 md:h-32 text-secondary/5 absolute top-4 left-4 md:top-8 md:left-8" />
                   
                   <div className="flex flex-col items-center text-center relative z-10 w-full">
@@ -105,6 +115,8 @@ export function SocialProof() {
             ))}
           </div>
         </div>
+
+        {children}
       </div>
     </section>
   );

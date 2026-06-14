@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { SendHorizontal } from 'lucide-react';
+import { SendHorizontal, Mail, MapPin } from 'lucide-react';
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -42,16 +42,16 @@ export function ContactForm() {
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12">
-              <div className="bg-surface-container/50 backdrop-blur-sm p-6 md:p-8 rounded-xl border border-secondary/20 hover:border-secondary/40 transition-colors">
+              <div className="bg-surface-container/50 backdrop-blur-sm p-6 md:p-8 rounded-xl border border-secondary/20 hover:border-secondary/40 transition-colors text-left">
                 <h4 className="text-label-lg text-on-surface uppercase tracking-widest mb-4 flex items-center gap-3">
-                  <span className="w-10 h-[1px] bg-secondary"></span> Contact
+                  <Mail className="w-5 h-5 text-secondary" /> Contact
                 </h4>
                 <p className="text-on-surface-variant mb-2 text-body-md hover:text-secondary cursor-pointer transition-colors">info@paansutraa.com</p>
                 <p className="text-on-surface-variant text-body-md hover:text-secondary cursor-pointer transition-colors">+91 (800) 123-4567</p>
               </div>
-              <div className="bg-surface-container/50 backdrop-blur-sm p-6 md:p-8 rounded-xl border border-secondary/20 hover:border-secondary/40 transition-colors">
+              <div className="bg-surface-container/50 backdrop-blur-sm p-6 md:p-8 rounded-xl border border-secondary/20 hover:border-secondary/40 transition-colors text-left">
                 <h4 className="text-label-lg text-on-surface uppercase tracking-widest mb-4 flex items-center gap-3">
-                  <span className="w-10 h-[1px] bg-secondary"></span> Location
+                  <MapPin className="w-5 h-5 text-secondary" /> Location
                 </h4>
                 <p className="text-on-surface-variant text-body-md">
                   Luxury Paan Creations Ltd.<br />

@@ -3,8 +3,7 @@ import { BrandVideo } from '../components/BrandVideo';
 import { Features } from '../components/Features';
 import { ProductShowcase } from '../components/ProductShowcase';
 import { WhoWeServe } from '../components/WhoWeServe';
-import { HoReCaTeaser } from '../components/HoReCaTeaser';
-import { WeddingTeaser } from '../components/WeddingTeaser';
+import { ServiceHighlights } from '../components/ServiceHighlights';
 import { SocialProof } from '../components/SocialProof';
 import { BrandStory } from '../components/BrandStory';
 import { ContactForm } from '../components/ContactForm';
@@ -19,8 +18,7 @@ export function Home() {
       <Features />
       <ProductShowcase />
       <WhoWeServe />
-      <HoReCaTeaser />
-      <WeddingTeaser />
+      <ServiceHighlights />
       <SocialProof />
       <BrandStory />
       <ContactForm />
