@@ -31,11 +31,9 @@ export function Footer() {
           <h4 className="text-headline-sm text-secondary mb-6">Explore</h4>
           <ul className="space-y-4">
             <li><Link to="/about" className="text-on-surface-variant hover:text-secondary hover:translate-x-1 transition-all inline-block text-label-md">About Us</Link></li>
-            <li><a className="text-on-surface-variant hover:text-secondary hover:translate-x-1 transition-all inline-block text-label-md" href="#">Sustainability</a></li>
-            <li><a className="text-on-surface-variant hover:text-secondary hover:translate-x-1 transition-all inline-block text-label-md" href="#">Contact Us</a></li>
+            <li><Link to="/contact" className="text-on-surface-variant hover:text-secondary hover:translate-x-1 transition-all inline-block text-label-md">Contact Us</Link></li>
             <li><a className="text-on-surface-variant hover:text-secondary hover:translate-x-1 transition-all inline-block text-label-md" href="#">Privacy Policy</a></li>
             <li><a className="text-on-surface-variant hover:text-secondary hover:translate-x-1 transition-all inline-block text-label-md" href="#">Terms of Service</a></li>
-            <li><a className="text-on-surface-variant hover:text-secondary hover:translate-x-1 transition-all inline-block text-label-md" href="#">Wholesale Inquiry</a></li>
           </ul>
         </div>
         <div>

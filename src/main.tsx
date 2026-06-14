@@ -5,6 +5,7 @@ import { About } from './pages/About';
 import { Products } from './pages/Products';
 import { HoReCa } from './pages/HoReCa';
 import { Order } from './pages/Order';
+import { Contact } from './pages/Contact';
 import { Weddings } from './pages/Weddings';
 import { Corporate } from './pages/Corporate';
 import './index.css';
@@ -21,6 +22,7 @@ const routes = [
       { path: '/order', element: <Order /> },
       { path: '/weddings', element: <Weddings /> },
       { path: '/corporate', element: <Corporate /> },
+      { path: '/contact', element: <Contact /> },
     ],
   },
 ];
