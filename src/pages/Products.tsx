@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Filter, X } from 'lucide-react';
+import { SEO } from '../components/SEO';
 
 export function Products() {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -47,8 +48,29 @@ export function Products() {
     ? products 
     : products.filter(p => p.category === activeCategory);
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": products.map((product, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "item": {
+        "@type": "Product",
+        "name": product.name,
+        "description": product.desc,
+        "image": product.image
+      }
+    }))
+  };
+
   return (
     <div className="min-h-screen pt-32 pb-20 bg-background">
+      <SEO 
+        title="Our Collection | Paansutraa Artisanal Paan"
+        description="Explore Paansutraa's exquisite collection of artisanal paans including Sada, Meetha, Chocolate, and the signature 24k Gold Paan."
+        canonical="/products"
+        schema={schema}
+      />
       <div className="px-5 md:px-margin-desktop max-w-container-max mx-auto">
         
         {/* Header */}

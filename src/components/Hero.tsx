@@ -323,7 +323,7 @@ export function Hero() {
       </section>
 
       {/* Trust Strip */}
-      <div className="bg-surface-container-low border-b border-secondary/20 py-10 md:py-12 relative z-20">
+      <div className="bg-black border-b border-secondary/20 py-10 md:py-12 relative z-20">
         <div className="px-5 md:px-margin-desktop max-w-container-max mx-auto">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-8 text-center">
             {trustItems.map((item, i) => (

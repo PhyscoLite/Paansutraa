@@ -1,5 +1,6 @@
 import { useEffect, useState, useMemo } from 'react';
 import { SendHorizontal, Minus, Plus, AlertCircle, CheckCircle2 } from 'lucide-react';
+import { SEO } from '../components/SEO';
 
 const products = [
   {
@@ -100,6 +101,11 @@ export function Order() {
 
   return (
     <div className="min-h-screen pt-32 pb-20 bg-background text-on-surface">
+      <SEO 
+        title="Bulk Orders | Custom Event Paan Experiences - Paansutraa"
+        description="Place bulk orders for weddings, corporate events, and hospitality. Customize your artisanal paan experience with our dedicated event catering team."
+        canonical="/order"
+      />
       <div className="px-5 md:px-margin-desktop max-w-container-max mx-auto">
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <h1 className="text-[28px] md:text-[48px] font-bold text-secondary font-serif mb-6">Bulk Event Orders</h1>

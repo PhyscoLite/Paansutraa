@@ -1,14 +1,38 @@
 import { useEffect } from 'react';
 import { Leaf, Award, Heart, Crown } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { SEO } from '../components/SEO';
 
 export function About() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' });
   }, []);
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Paansutraa",
+    "founder": {
+      "@type": "Person",
+      "name": "Suresh Chand Kashyap"
+    },
+    "url": "https://www.paansutraa.com",
+    "logo": "https://res.cloudinary.com/dm3scoj2q/image/upload/v1781452071/paansutraa_logo_cj3lgx.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "url": "https://www.paansutraa.com"
+    }
+  };
+
   return (
     <main className="pt-24 min-h-screen selection:bg-secondary/20 selection:text-secondary-dark">
+      <SEO 
+        title="Our Story | Paansutraa - Heritage & Artisanal Craft"
+        description="Discover the legacy of Paansutraa. Founder Suresh Chand Kashyap's journey to revive the royal tradition of artisanal luxury paan."
+        canonical="/about"
+        schema={schema}
+      />
       {/* SECTION 1 — Hero */}
       <section className="relative px-5 md:px-margin-desktop py-20 md:py-32 max-w-container-max mx-auto border-b border-secondary/10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">

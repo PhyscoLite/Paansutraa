@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Briefcase, Users, Gift, Star, Palette, MessageSquareText, ShieldCheck, Box, Crown, CheckCircle2, Clock, Truck, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { SocialProof } from '../components/SocialProof';
+import { SEO } from '../components/SEO';
 
 export function Corporate() {
   useEffect(() => {
@@ -10,6 +11,11 @@ export function Corporate() {
 
   return (
     <div className="min-h-screen bg-background text-on-surface">
+      <SEO 
+        title="Premium Corporate Gifting | Paansutraa Luxury Hampers"
+        description="Elevate your corporate gifting with Paansutraa's co-branded luxury paan hampers for Diwali, employees, and VIP clients. Premium, hygienic, pan-India delivery."
+        canonical="/corporate"
+      />
       {/* SECTION 1 — Hero */}
       <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">

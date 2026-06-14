@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Gift, Sparkles, Crown, Palette, Box, PenTool, CheckCircle2, Clock, Info } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { SocialProof } from '../components/SocialProof';
+import { SEO } from '../components/SEO';
 
 export function Weddings() {
   useEffect(() => {
@@ -10,6 +11,11 @@ export function Weddings() {
 
   return (
     <div className="min-h-screen bg-background text-on-surface">
+      <SEO 
+        title="Luxury Wedding Paan Setup | Artisanal Counters & Favor Boxes"
+        description="Make your wedding unforgettable with Paansutraa's live artisanal paan counters, bespoke favor boxes, and signature 24k Gold Paan experience."
+        canonical="/weddings"
+      />
       {/* SECTION 1 — Hero */}
       <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">

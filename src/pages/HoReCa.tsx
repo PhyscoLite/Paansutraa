@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Building2, Utensils, Coffee, Leaf, ShieldCheck, Truck, BadgeDollarSign, HeartHandshake, CheckCircle2, Factory } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { SocialProof } from '../components/SocialProof';
+import { SEO } from '../components/SEO';
 
 const products = [
   {
@@ -37,6 +38,11 @@ export function HoReCa() {
 
   return (
     <div className="min-h-screen bg-background text-on-surface">
+      <SEO 
+        title="HoReCa Partner | Elevate Your Guest's After-Meal Experience"
+        description="Partner with Paansutraa to offer your restaurant, hotel, or lounge guests a signature artisanal luxury paan finish. High-margin, zero complexity."
+        canonical="/horeca"
+      />
       {/* SECTION 1 — Hero */}
       <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
