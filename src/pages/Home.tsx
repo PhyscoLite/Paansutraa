@@ -1,4 +1,5 @@
 import { Hero } from '../components/Hero';
+import { BodyBenefits } from '../components/BodyBenefits';
 import { BrandVideo } from '../components/BrandVideo';
 import { Features } from '../components/Features';
 import { ProductShowcase } from '../components/ProductShowcase';
@@ -29,6 +30,7 @@ export function Home() {
         schema={schema}
       />
       <Hero />
+      <BodyBenefits />
       <BrandVideo />
       <Features />
       <ProductShowcase />
